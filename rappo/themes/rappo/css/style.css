@@ -153,6 +153,10 @@ Common Styles
   margin-bottom: 80px;
 }
 
+.section-heading1 {
+  margin-bottom: 40px;
+}
+
 img {
   vertical-align: middle;
   border-style: none;
@@ -728,7 +732,7 @@ PAGE BANNER
 }
 
 .banner-content {
-  padding: 150px 0px;
+  padding: 10px 0px;
   padding-right: 30px;
 }
 
@@ -1122,6 +1126,10 @@ h5.subtitle {
 
 .section-heading h2 {
   font-size: 50px;
+}
+
+.section-heading1 h3 {
+  font-size: 30px;
 }
 
 .section-heading p {
