@@ -59,3 +59,19 @@ function answer_check() {
     });
   }
 }
+
+function view_check_1() {
+  $("#1").prop("checked", true);
+}
+
+function view_check_2() {
+  $("#2").prop("checked", true);
+}
+
+function view_check_3() {
+  $("#3").prop("checked", true);
+}
+
+function view_check_4() {
+  $("#4").prop("checked", true);
+}
