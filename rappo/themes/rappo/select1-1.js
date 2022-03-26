@@ -12,6 +12,7 @@ window.onload = function start() {
       }
     })
     .then((data) => {
+      console.log(data);
       const random_num = Math.floor(Math.random() * data.records.length);
 
       document.getElementById("opt1").innerHTML =

@@ -175,7 +175,7 @@
             </h3>
             <div class="nunum col-md-5 col-lg-6 pl-4">
               <textarea
-                id="memo"
+                id="question"
                 autocomplete="off"
                 style="width: 100%; color: #000; background-color: #f5f5f5"
                 class="form-control shadow"
@@ -230,7 +230,7 @@
               <div class="column justify-content-center" style="justify-content: center; align-items: center; margin-bottom: 70px; ">
                 <h4 style="color:rgb(49, 49, 49); text-align: center; margin-top: 10px; width:6%; margin-right:4%; float: left;">1)</h4>
                 <input
-                  id="date"
+                  id="opt1"
                   autocomplete="off"
                   style="width:35%;  margin-right:10%; color: #000; background-color: #f5f5f5; float: left;"
                   class="form-control shadow"
@@ -240,7 +240,7 @@
 
                 <h4 style="color:rgb(49, 49, 49); text-align: center; margin-top: 10px; width:6%; margin-right:4%; float: left;">2)</h4>
                 <input
-                  id="date"
+                  id="opt2"
                   autocomplete="off"
                   style="width:35%;  color: #000; background-color: #f5f5f5; float: left;"
                   class="form-control shadow"
@@ -252,7 +252,7 @@
               <div class="column justify-content-center" style="justify-content: center; align-items: center;">
                 <h4 style="color:rgb(49, 49, 49); text-align: center; margin-top: 10px; width:6%; margin-right:4%; float: left;">3)</h4>
                 <input
-                  id="date"
+                  id="opt3"
                   autocomplete="off"
                   style="width:35%;  margin-right:10%; color: #000; background-color: #f5f5f5; float: left;"
                   class="form-control shadow"
@@ -262,7 +262,7 @@
 
                 <h4 style="color:rgb(49, 49, 49); text-align:center; margin-top: 10px; width:6%; margin-right:4%; float: left;">4)</h4>
                 <input
-                  id="date"
+                  id="opt4"
                   autocomplete="off"
                   style="width:35%;  color: #000; background-color: #f5f5f5; float: left;"
                   class="form-control shadow"
@@ -280,22 +280,22 @@
             <div class="col-md-5 col-lg-6 pl-4">
               <div class="column">
                 <div style="width: 20%; float: left;">
-                  <input type="radio" id="huey" name="drone" value="huey" style="float: left; margin-right: 10px;" />
+                  <input type="radio" name="opt" value="1" style="float: left; margin-right: 10px;" />
                   <h5 class="nunum" style="height:30px; justify-content: center; display: table-cell; vertical-align: middle;">1</h5>
                 </div>
 
                 <div style="width: 20%; float: left;">
-                  <input type="radio" id="huey" name="drone" value="huey" style="float: left; margin-right: 10px;" />
+                  <input type="radio" name="opt" value="2" style="float: left; margin-right: 10px;" />
                   <h5 class="nunum" style="height:30px; justify-content: center; display: table-cell; vertical-align: middle;">2</h5>
                 </div>
 
                 <div style="width: 20%; float: left;">
-                  <input type="radio" id="huey" name="drone" value="huey" style="float: left; margin-right: 10px;" />
+                  <input type="radio"name="opt" value="3" style="float: left; margin-right: 10px;" />
                   <h5 class="nunum" style="height:30px; justify-content: center; display: table-cell; vertical-align: middle;">3</h5>
                 </div>
 
                 <div style="width: 20%;float: left;">
-                  <input type="radio" id="huey" name="drone" value="huey" style="float: left; margin-right: 10px;" />
+                  <input type="radio"name="opt" value="4" style="float: left; margin-right: 10px;" />
                   <h5 class="nunum" style="height:30px; justify-content: center; display: table-cell; vertical-align: middle;">4</h5>
                 </div>
 
@@ -308,7 +308,7 @@
           align="right"
           style="float: right; margin-right: 150px;"
         >
-          <a href="create.html" class="nunum_bold btn btn-dark btn-block btn-circled"
+          <a class="nunum_bold btn btn-dark btn-block btn-circled" onclick="q_create()" style="color: white;"
             >문제 생성</a
           >
         </div>
@@ -329,6 +329,8 @@
 
     <script src="js/form/contact.js"></script>
     <script src="js/theme.js"></script>
-    <script src="create1-1.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="create1-1.js"></script>
   </body>
 </html>
