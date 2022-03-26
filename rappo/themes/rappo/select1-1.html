@@ -110,7 +110,13 @@
               ></i>
               <p
                 class="nunum"
-                style="line-height: 200%; float: left; color: black"
+                id="question"
+                style="
+                  line-height: 200%;
+                  float: left;
+                  color: black;
+                  width: 800px;
+                "
               >
                 6명의 정원사는 6분 안에 6그루의 나무를 심습니다. <br />60분 안에
                 60그루의 나무를 심으려면 얼마나 많은 정원사가 필요할까요?
@@ -140,23 +146,23 @@
           "
         >
           <div class="check-box" style="margin-right: 30px">
-            <input type="radio" id="huey" name="drone" value="huey" />
-            <h5 class="nunum">10명</h5>
+            <input type="radio" id="huey" name="opt" value="1" />
+            <h5 id="opt1" class="nunum">10명</h5>
           </div>
 
           <div class="check-box" style="margin-right: 30px">
-            <input type="radio" id="huey" name="drone" value="huey" />
-            <h5 class="nunum">60명</h5>
+            <input type="radio" id="huey" name="opt" value="2" />
+            <h5 id="opt2" class="nunum">60명</h5>
           </div>
 
           <div class="check-box" style="margin-right: 30px">
-            <input type="radio" id="huey" name="drone" value="huey" />
-            <h5 class="nunum">15명</h5>
+            <input type="radio" id="huey" name="opt" value="3" />
+            <h5 id="opt3" class="nunum">15명</h5>
           </div>
 
           <div class="check-box" style="margin-right: 30px">
-            <input type="radio" id="huey" name="drone" value="huey" />
-            <h5 class="nunum">6명</h5>
+            <input type="radio" id="huey" name="opt" value="4" />
+            <h5 id="opt4" class="nunum">6명</h5>
           </div>
         </div>
 
@@ -164,7 +170,10 @@
           align="right"
           style="float: right; margin-right: 50px; margin-bottom: 50px"
         >
-          <a href="Q_answer.html" class="btn btn-primary btn-circled nunum"
+          <a
+            class="btn btn-primary btn-circled nunum"
+            onclick="answer_check()"
+            style="color: white"
             >완 료 →</a
           >
         </div>
@@ -173,17 +182,10 @@
 
     <!-- Main jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="plugins/bootstrap/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Map Js -->
-    <script src="plugins/google-map/gmap3.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
 
-    <script src="js/form/contact.js"></script>
     <script src="js/theme.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="select1-1.js"></script>
   </body>
 </html>

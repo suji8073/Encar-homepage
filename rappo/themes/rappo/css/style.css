@@ -1248,7 +1248,7 @@ input[type="radio"]:checked:before {
 .check-box {
   border: 1px solid #eee;
   width: 180px;
-  height: 120px;
+  height: 160px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
