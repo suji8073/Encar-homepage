@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="it" />
+		<meta
+			name="keywords"
+			content="Rapoo,creative, agency, startup,onepage, clean, modern,business, company,it"
+		/>
+
+		<meta name="author" content="themefisher.com" />
+
+		<title>엔카닷컴</title>
+
+		<!-- bootstrap.min css -->
+		<link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css" />
+		<!-- Animate Css -->
+		<link rel="stylesheet" href="../../plugins/animate-css/animate.css" />
+		<!-- Icon Font css -->
+		<link rel="stylesheet" href="../../plugins/fontawesome/css/all.css" />
+		<link rel="stylesheet" href="../../plugins/fonts/Pe-icon-7-stroke.css" />
+		<!-- Themify icon Css -->
+		<link rel="stylesheet" href="../../plugins/themify/css/themify-icons.css" />
+		<!-- Slick Carousel CSS -->
+		<link rel="stylesheet" href="../../plugins/slick-carousel/slick/slick.css" />
+		<link
+			rel="stylesheet"
+			href="../../plugins/slick-carousel/slick/slick-theme.css"
+		/>
+
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="../../css/style.css" />
+
+		<style>
+			@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+			.nunum {
+				font-family: "NanumSquare", sans-serif;
+				font-size: 17px;
+				line-height: 1.5;
+				font-weight: 400;
+			}
+			.nunum_bold {
+				font-family: "NanumSquare", sans-serif;
+				font-size: 17px;
+				line-height: 1.5;
+				font-weight: 600;
+			}
+		</style>
+	</head>
+
+	<body id="top-header" class="bg-grey">
+		<div id="page-loader">
+			<div class="loader-icon fa fa-spin colored-border"></div>
+		</div>
+		<nav
+			class="navbar navbar-expand-lg navbar-dark trans-navigation fixed-top navbar-togglable"
+			style="background-color: #21c87a"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="../../index.html">
+					<h3>Encar</h3>
+				</a>
+				<!-- Toggler -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarCollapse"
+					aria-controls="navbarCollapse"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="fa fa-bars"></span>
+				</button>
+
+				<!-- Collapse -->
+				<div class="collapse navbar-collapse nunum" id="navbarCollapse">
+					<!-- Links -->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="ti-user"></i> Login</a>
+						</li>
+					</ul>
+				</div>
+				<!-- / .navbar-collapse -->
+			</div>
+			<!-- / .container -->
+		</nav>
+
+		<section class="section1" id="pricing">
+			<!-- Content -->
+			<div
+				class="container card bg-secondary shadow border-0"
+				style="margin-top: 80px"
+			>
+				<div class="row">
+					<div class="container section-heading nunum" style="margin: 30px">
+						<!-- Heading -->
+						<h2 class="nunum_bold" style="margin-bottom: 30px">Question</h2>
+						<!-- Subheading -->
+						<div class="pricing-box1">
+							<i
+								class="ti-comment-alt fa-3x"
+								style="float: left; margin-right: 30px"
+							></i>
+							<p
+								class="nunum"
+								id="question"
+								style="
+									line-height: 200%;
+									float: left;
+									color: black;
+									width: 800px;
+								"
+							></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- / .row -->
+				<h2
+					class="nunum"
+					style="
+						margin-left: 20px;
+						margin-right: 20px;
+						margin-top: 50px;
+						margin-bottom: 12px;
+					"
+				>
+					SELECT ONLY ONE
+				</h2>
+				<div
+					class="row nunum"
+					style="
+						text-align: center;
+						margin-bottom: 30px;
+						justify-content: center;
+					"
+				>
+					<div
+						class="check-box"
+						style="margin-right: 30px"
+						onclick="view_check_1()"
+					>
+						<input id="1" type="radio" name="opt" value="1" />
+						<h5 id="opt1" class="nunum"></h5>
+					</div>
+
+					<div
+						class="check-box"
+						style="margin-right: 30px"
+						onclick="view_check_2()"
+					>
+						<input id="2" type="radio" name="opt" value="2" />
+						<h5 id="opt2" class="nunum"></h5>
+					</div>
+
+					<div
+						class="check-box"
+						style="margin-right: 30px"
+						onclick="view_check_3()"
+					>
+						<input id="3" type="radio" name="opt" value="3" />
+						<h5 id="opt3" class="nunum"></h5>
+					</div>
+
+					<div
+						class="check-box"
+						style="margin-right: 30px"
+						onclick="view_check_4()"
+					>
+						<input id="4" type="radio" name="opt" value="4" />
+						<h5 id="opt4" class="nunum"></h5>
+					</div>
+				</div>
+
+				<div
+					align="right"
+					style="float: right; margin-right: 50px; margin-bottom: 50px"
+				>
+					<a
+						class="btn btn-primary btn-circled nunum"
+						onclick="answer_check()"
+						style="color: white"
+						>완 료 →</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main jQuery -->
+		<script src="../../plugins/jquery/jquery.min.js"></script>
+
+		<script src="js/theme.js"></script>
+
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script type="text/javascript" src="select1-1.js"></script>
+	</body>
+</html>
